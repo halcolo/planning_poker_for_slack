@@ -1,0 +1,127 @@
+{
+	"type": "modal",
+	"callback_id": "poker-modal",
+	"title": {
+		"type": "plain_text",
+		"text": "My App",
+		"emoji": true
+	},
+	"submit": {
+		"type": "plain_text",
+		"text": "Submit",
+		"emoji": true
+	},
+	"close": {
+		"type": "plain_text",
+		"text": "Cancel",
+		"emoji": true
+	},
+	"blocks": [
+		{
+			"type": "section",
+			"text": {
+				"type": "plain_text",
+				"text": ":wave: Hey!\n\nPlease fill this form to select to play planning poker with your teamates.",
+				"emoji": true
+			}
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"type": "input",
+			"element": {
+				"type": "plain_text_input",
+				"action_id": "plain_text_input-action"
+			},
+			"label": {
+				"type": "plain_text",
+				"text": "Label",
+				"emoji": true
+			}
+		},
+		{
+			"type": "input",
+			"label": {
+				"type": "plain_text",
+				"text": ":video_game: Select your game type.",
+				"emoji": true
+			},
+			"element": {
+				"type": "radio_buttons",
+				"options": [
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Median",
+							"emoji": true
+						},
+						"value": "1"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Average",
+							"emoji": true
+						},
+						"value": "2"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Majority",
+							"emoji": true
+						},
+						"value": "3"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Unanimity",
+							"emoji": true
+						},
+						"value": "4"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Extremes",
+							"emoji": true
+						},
+						"value": "5"
+					}
+				]
+			}
+		},
+		{
+			"type": "input",
+			"element": {
+				"type": "radio_buttons",
+				"options": [
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Yes",
+							"emoji": true
+						},
+						"value": "value-0"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "No",
+							"emoji": true
+						},
+						"value": "value-1"
+					}
+				],
+				"action_id": "radio_buttons-action"
+			},
+			"label": {
+				"type": "plain_text",
+				"text": ":coffee: Coffee card?",
+				"emoji": true
+			}
+		}
+	]
+}
